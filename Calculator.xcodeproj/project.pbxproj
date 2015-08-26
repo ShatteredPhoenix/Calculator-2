@@ -14,6 +14,8 @@
 		9A41F1A81A8B76FD007230E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A41F1A71A8B76FD007230E2 /* Images.xcassets */; };
 		9A41F1AB1A8B76FD007230E2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A41F1A91A8B76FD007230E2 /* LaunchScreen.xib */; };
 		9A41F1B71A8B76FD007230E2 /* CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A41F1B61A8B76FD007230E2 /* CalculatorTests.m */; };
+		9A41F1C21A98C788007230E2 /* CalculatorBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A41F1C11A98C788007230E2 /* CalculatorBrain.m */; };
+		9AC9D5281A9E36D100A65220 /* TapeViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AC9D5271A9E36D100A65220 /* TapeViewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		9A41F1B01A8B76FD007230E2 /* CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A41F1B51A8B76FD007230E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A41F1B61A8B76FD007230E2 /* CalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorTests.m; sourceTree = "<group>"; };
+		9A41F1C01A98C788007230E2 /* CalculatorBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorBrain.h; sourceTree = "<group>"; };
+		9A41F1C11A98C788007230E2 /* CalculatorBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorBrain.m; sourceTree = "<group>"; };
+		9AC9D5261A9E36D100A65220 /* TapeViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TapeViewViewController.h; sourceTree = "<group>"; };
+		9AC9D5271A9E36D100A65220 /* TapeViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TapeViewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,9 +92,13 @@
 				9A41F1A11A8B76FD007230E2 /* ViewController.h */,
 				9A41F1A21A8B76FD007230E2 /* ViewController.m */,
 				9A41F1A41A8B76FD007230E2 /* Main.storyboard */,
+				9A41F1C01A98C788007230E2 /* CalculatorBrain.h */,
+				9A41F1C11A98C788007230E2 /* CalculatorBrain.m */,
 				9A41F1A71A8B76FD007230E2 /* Images.xcassets */,
 				9A41F1A91A8B76FD007230E2 /* LaunchScreen.xib */,
 				9A41F19A1A8B76FD007230E2 /* Supporting Files */,
+				9AC9D5261A9E36D100A65220 /* TapeViewViewController.h */,
+				9AC9D5271A9E36D100A65220 /* TapeViewViewController.m */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -219,8 +229,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AC9D5281A9E36D100A65220 /* TapeViewViewController.m in Sources */,
 				9A41F1A31A8B76FD007230E2 /* ViewController.m in Sources */,
 				9A41F1A01A8B76FD007230E2 /* AppDelegate.m in Sources */,
+				9A41F1C21A98C788007230E2 /* CalculatorBrain.m in Sources */,
 				9A41F19D1A8B76FD007230E2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,6 +358,7 @@
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -356,6 +369,7 @@
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -412,6 +426,7 @@
 				9A41F1BC1A8B76FD007230E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A41F1BD1A8B76FD007230E2 /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +435,7 @@
 				9A41F1BF1A8B76FD007230E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
